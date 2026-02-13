@@ -54,7 +54,7 @@ struct ContentView: View {
                                     VStack(alignment: .leading, spacing: 4) {
                                         Text(note.title)
                                             .font(.headline)
-                                            .strikethrough(note.isComplete, color: .gray)
+                                            .strikethrough(note.isCompleted, color: .gray)
                                             .foregroundColor(note.isCompleted ? .gray : .primary)
                                         Text(note.content)
                                             .font(.subheadline)
